@@ -8,9 +8,13 @@
 }
 
 body {
+
     display: flex;
     justify-content: center;
+
+    margin: 0;
 }
+
 
 .calculator {
     display: flex;
@@ -18,15 +22,24 @@ body {
     border: solid;
     border-radius: 5%;
     padding: 20px;
-
-    margin-top: 200px;
+    margin-top: 80px;
+    box-shadow: 0px 10px 20px rgb(63, 66, 83);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.display {
+.calculator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 50px rgba(255, 255, 255, 0.363);
+}
+
+.display,
+.lastline {
     display: flex;
     justify-content: right;
     padding: 10px;
-    margin-right: 14px;
+    margin-right: 16px;
+    width: 380px;
+    overflow: hidden;
 }
 
 .row-one,
@@ -50,15 +63,61 @@ body {
 }
 
 .btn a {
+    padding: 20px;
     transition: transform 0.1s ease, opacity 0.1s ease;
     position: relative;
 }
 
 .btn a:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
     opacity: 0.5;
+
 }
 
 .btn a:active {
+    transform: scale(1);
+}
+
+.lastline {
+    height: 60px;
+    font-size: 32px;
+    color: rgb(131, 131, 131);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    justify-content: center;
+    gap: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.guthub {
+    width: 16px;
+    height: auto;
+}
+
+
+
+.gmail {
+    width: 16px;
+    height: auto;
+}
+
+
+
+.contacts a:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+
+.contacts a:active {
     transform: scale(1);
 }

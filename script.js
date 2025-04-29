@@ -1,4 +1,5 @@
 const display = document.querySelector('.display');
+const lastline = document.querySelector('.lastline');
 const allclear = document.getElementById('allclear');
 const invertsign = document.getElementById('invertsign');
 const percentage = document.getElementById('percentage');
@@ -19,7 +20,7 @@ const six = document.getElementById('six');
 const seven = document.getElementById('seven');
 const eight = document.getElementById('eight');
 const nine = document.getElementById('nine');
-
+const doublezero = document.getElementById('doublezero');
 
 let expression = '0';
 let displayexpression = '0';
@@ -107,10 +108,18 @@ nine.addEventListener('click', () => {
 });
 
 
+doublezero.addEventListener('click', () => {
+    expression = expression + '00';
+    displayexpression = displayexpression + '00';
+    expression = zeroObliterator(zeroObliterator(expression));
+    displayexpression = zeroObliterator(zeroObliterator(displayexpression));
+    display.textContent = displayexpression;
+});
 
 
 
-//Functions//
+
+//Operations//
 
 add.addEventListener('click', () => {
     expression = expression + '+';
@@ -162,6 +171,7 @@ point.addEventListener('click', () => {
 equals.addEventListener('click', () => {
     display.textContent = eval(expression);
     expression = display.textContent;
+    lastline.textContent = displayexpression;
     displayexpression = display.textContent;
 
     console.log(expression + "   " + typeof (expression));  //Remove after debug
