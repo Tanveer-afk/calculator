@@ -1,0 +1,64 @@
+* {
+    background-color: #1e2124;
+    color: white;
+
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 5%;
+    padding: 20px;
+
+    margin-top: 200px;
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    margin-right: 14px;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.btn a {
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    position: relative;
+}
+
+.btn a:hover {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.btn a:active {
+    transform: scale(1);
+}
