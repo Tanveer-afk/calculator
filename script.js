@@ -167,6 +167,7 @@ point.addEventListener('click', () => {
 
 
 
+
 //Equals//
 equals.addEventListener('click', () => {
     display.textContent = eval(expression);

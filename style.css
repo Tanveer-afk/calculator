@@ -52,8 +52,6 @@ body {
     justify-content: space-between;
 }
 
-
-
 .btn {
     display: flex;
     justify-content: center;
@@ -103,20 +101,15 @@ body {
     height: auto;
 }
 
-
-
 .gmail {
     width: 16px;
     height: auto;
 }
 
-
-
 .contacts a:hover {
     transform: scale(1.1);
     opacity: 0.5;
 }
-
 
 .contacts a:active {
     transform: scale(1);

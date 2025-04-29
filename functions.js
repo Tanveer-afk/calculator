@@ -31,9 +31,7 @@ function percentagefn(current) {
 }
 
 
-
 function zeroObliterator(numstr) {
-
 
 
     if (numstr.charAt(0) === '0' && numstr.length > 1) {
