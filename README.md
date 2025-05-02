@@ -10,3 +10,6 @@ A simple, interactive calculator built with HTML, CSS, and JavaScript. Allows us
 live : https://tanveer-afk.github.io/calculator/
 
 
+## Contributors
+
+- @mertgulexe (https://github.com/mertgulexe) - Fixed a typo in CSS class name (`.guthub` to `.github`)
